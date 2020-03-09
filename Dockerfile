@@ -6,3 +6,5 @@ ADD default.conf /etc/nginx/conf.d/default.conf
 RUN chmod +x /run.sh
 
 CMD ["/run.sh"]
+
+EXPOSE 80
