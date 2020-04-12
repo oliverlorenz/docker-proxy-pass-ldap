@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM limina/nginx-ldap:1.16.1
 
 ADD run.sh /run.sh
 ADD default.conf /etc/nginx/conf.d/default.conf

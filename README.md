@@ -1,6 +1,6 @@
 # docker-proxy-pass
 
-A very simple container to proxy_pass. Useful to use a external service with [jwilder/nginx-proxy](https://hub.docker.com/r/jwilder/nginx-proxy/).
+This is a fork of [oliverlorenz/proxy-pass](https://github.com/oliverlorenz/docker-proxy-pass) with aditional ldap support. It pass a request to a external service and checks ldap credentials. Works with [jwilder/nginx-proxy](https://hub.docker.com/r/jwilder/nginx-proxy/).
 
 ## Example
 
@@ -10,5 +10,5 @@ docker run \
    -p 8080 \
    -e "UPSTREAM_HOST=example.com" \
    -e "UPSTREAM_PORT=80" \
-   oliverlorenz/proxy-pass
+   oliverlorenz/proxy-pass-ldap
 ```
